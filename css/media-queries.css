@@ -1,13 +1,45 @@
 /* Mobile 480px */
 
-@media screen and (max-width: 480px) {
-  
+@media screen and (min-width: 480px) {
 
-  .card {
-    margin: 50px 0;
+  body {
+    background-color: #232946;
   }
 
-  .row {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  p {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 20px 0;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .card {
+    margin-bottom: 70px;
+  }
+
+  .lessons,
+  header {
+    background-color: #232946;
+  }
+
+  .lessons .row {
     display: block;
   }
 
@@ -15,19 +47,42 @@
     width: 100%;
   }
 
+  
+
+  /* STEPS SECTION */
+
+  .steps .row {
+    display: block;
+  }
+
+  section.steps,
+  section.lessons {
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
   .steps .col {
     width: 100%;
-    margin-bottom: 50px;
+  }
+
+  section.why-us {
+    margin: 0;
+  }
+
+  .why-us {
+    background-color: #222;
+  }
+
+  .why-us h2 {
+    margin: 3rem 0;
   }
 
   .why-us .row {
-    flex-direction: column;
+    display: block;
   }
 
-  .why-us .col-left,
-  .why-us .col-right {
+  .why-us .col {
     width: 100%;
-    justify-content: center;
     text-align: center;
   }
 
@@ -38,16 +93,59 @@
 
 /* Tablet 768px */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 100%;
+  }
+
+  .site-header {
+    margin: 0;
+  }
+
+  .lessons .row,
+  .steps .row {
+    display: flex;
+  }
+
+/* WHY US SECTION */
+
+  section.why-us {
+    background-color: #232946;
+  }
+
+  section.why-us p {
+    padding-bottom:  50px ;
+  }
+
+  .why-us .row {
+    display: flex;
+  }
+
+  .why-us h2 {
+    padding: 50px 0;
+    margin: 0;
+  }
+
+  .why-us h3 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .why-us p {
+    text-align: left;
+  }
+
+  .why-us .col-left {
+    padding: 0;
+    width: 70%;
+  }
+
+  .why-us img {
+    width:90%;
   }
 }
 
 /* Bonus */
 
-@media screen and (min-width:768px) and (max-width:1160px) {
-    .container {
-        width: 100%;
-    }
+@media screen and (min-width: 768px) and (max-width: 1160px) {
 }
